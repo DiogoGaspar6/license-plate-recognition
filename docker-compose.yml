@@ -1,0 +1,16 @@
+services:
+  yolo-detection:
+    build:
+      context: ./src
+    volumes:
+      - .:/app
+    ports:
+      - "5555:5555"
+    environment:
+      - ENV=production
+      - CAMERA_DEVICE=1
+      - FRAME_WIDTH=1280
+      - FRAME_HEIGHT=720
+    devices:
+      - "/dev/video0:/dev/video0"  # Map the host's video device to the container
+    privileged: true  # Allow the container to access host devices
