@@ -1,0 +1,12 @@
+train: /Users/diogoogaspar/Documents/Universidade/3Ano/2SEMESTRE/AOOP/TRAB-DETECTION-MATRICULAS/license-plate-recognition/models/License Plate Recognition.v11i.yolov11/train/images
+val: /Users/diogoogaspar/Documents/Universidade/3Ano/2SEMESTRE/AOOP/TRAB-DETECTION-MATRICULAS/license-plate-recognition/models/License Plate Recognition.v11i.yolov11/valid/images
+test: /Users/diogoogaspar/Documents/Universidade/3Ano/2SEMESTRE/AOOP/TRAB-DETECTION-MATRICULAS/license-plate-recognition/models/License Plate Recognition.v11i.yolov11/test/images
+nc: 1
+names: ['License_Plate']
+
+roboflow:
+  workspace: roboflow-universe-projects
+  project: license-plate-recognition-rxg4e
+  version: 11
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e/dataset/11

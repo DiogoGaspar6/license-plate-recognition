@@ -1,0 +1,13 @@
+train: /Users/diogoogaspar/Documents/Universidade/3Ano/2SEMESTRE/AOOP/TRAB-DETECTION-MATRICULAS/license-plate-recognition/models/portuguese-license-plate.v1i.yolov11/train/images
+val: /Users/diogoogaspar/Documents/Universidade/3Ano/2SEMESTRE/AOOP/TRAB-DETECTION-MATRICULAS/license-plate-recognition/models/portuguese-license-plate.v1i.yolov11/valid/images
+test: /Users/diogoogaspar/Documents/Universidade/3Ano/2SEMESTRE/AOOP/TRAB-DETECTION-MATRICULAS/license-plate-recognition/models/portuguese-license-plate.v1i.yolov11/test/images
+
+nc: 1
+names: ['portuguese-license-plates']
+
+roboflow:
+  workspace: licenseplateportugueserecognition
+  project: my-first-project-fgtm1
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/licenseplateportugueserecognition/my-first-project-fgtm1/dataset/1

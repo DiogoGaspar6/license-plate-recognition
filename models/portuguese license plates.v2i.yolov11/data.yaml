@@ -1,0 +1,14 @@
+train: /Users/diogoogaspar/Documents/Universidade/3Ano/2SEMESTRE/AOOP/TRAB-DETECTION-MATRICULAS/license-plate-recognition/models/portuguese license plates.v2i.yolov11/train/images
+val: /Users/diogoogaspar/Documents/Universidade/3Ano/2SEMESTRE/AOOP/TRAB-DETECTION-MATRICULAS/license-plate-recognition/models/portuguese license plates.v2i.yolov11/valid/images
+test: /Users/diogoogaspar/Documents/Universidade/3Ano/2SEMESTRE/AOOP/TRAB-DETECTION-MATRICULAS/license-plate-recognition/models/portuguese license plates.v2i.yolov11/test/images
+
+
+nc: 1
+names: ['portuguese-license-plates']
+
+roboflow:
+  workspace: detect-portuguese-plates
+  project: portuguese-license-plates
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/detect-portuguese-plates/portuguese-license-plates/dataset/2
