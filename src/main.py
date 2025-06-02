@@ -70,6 +70,7 @@ def extract_plate_text(plate_img):
     return plate_text, text_results
 
 def detect_and_process(frame, model):
+
     results = model(frame)[0]
     
     for box in results.boxes:
