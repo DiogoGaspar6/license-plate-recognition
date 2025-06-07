@@ -33,7 +33,7 @@ def is_new_detection(x1, y1, x2, y2, threshold=50):
 
 def is_valid_plate(text, confidence):
     return (len(text) == REQUIRED_LENGTH and 
-            confidence >= MIN_CONFIDENCE and
+            confidence >= MIN_CONFIDENCE and    
             text.isalnum()) 
 
 def preprocess_plate(plate_img):
@@ -87,13 +87,10 @@ def detect_and_process(frame, model):
             if is_valid_plate(plate_text, confidence):
                 print(f"Matrícula detectada: {plate_text} (Confiança: {confidence:.2f})")
                 
-                # Garante diretório de saída
                 if not os.path.exists(OUTPUT_DIR):
                     os.makedirs(OUTPUT_DIR)
                 
-                # Armazena apenas se for de alta confiança ou nova
                 if confidence >= HIGH_CONFIDENCE or plate_text not in [entry['text'] for entry in license_plate_data]:
-                    # Nome do arquivo com matrícula e confiança
                     plate_path = f"{OUTPUT_DIR}/{plate_text}_{confidence:.2f}.jpg"
                     cv2.imwrite(plate_path, plate_img)
                     
